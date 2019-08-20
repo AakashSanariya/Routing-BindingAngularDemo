@@ -1,0 +1,18 @@
+<div>
+    <h2>City Details</h2>
+    <table border="5" align="center">
+        <thead>
+        <tr>
+            <td>No</td>
+            <td>Name</td>
+            <td>Description</td>
+        </tr>
+        </thead>
+        <tr *ngFor="let city of cities">
+            <td>{{ city.id }}</td>
+            <td>{{ city.name }}</td>
+            <td>{{ city.description }}</td>
+        </tr>
+    </table>
+</div>
+

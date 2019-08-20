@@ -1,0 +1,17 @@
+<div>
+    <h2>State Details</h2>
+    <table border="5" align="center">
+        <thead>
+        <tr>
+            <td>No</td>
+            <td>Name</td>
+            <td>Description</td>
+        </tr>
+        </thead>
+        <tr *ngFor="let state of states">
+            <td>{{ state.id }}</td>
+            <td>{{ state.name }}</td>
+            <td>{{ state.description }}</td>
+        </tr>
+    </table>
+</div>
