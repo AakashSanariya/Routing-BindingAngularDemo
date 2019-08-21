@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import { City } from '../Model/City';
 @Component({
   selector: 'app-city-componenet',
@@ -8,8 +8,7 @@ import { City } from '../Model/City';
 export class CityComponenetComponent implements OnInit {
 
   constructor() { }
-
-  cities : city[] = [
+  cities : City[] = [
     {
       id : 1,
       name : 'Ahmedabad',

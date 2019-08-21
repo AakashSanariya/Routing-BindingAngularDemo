@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import { State } from '../Model/State';
 
 @Component({
@@ -7,7 +7,7 @@ import { State } from '../Model/State';
   styleUrls: ['./state-component.component.css']
 })
 export class StateComponentComponent implements OnInit {
-
+  
   constructor() { }
   states : State[] = [
     {

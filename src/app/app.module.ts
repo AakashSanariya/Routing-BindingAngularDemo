@@ -7,6 +7,8 @@ import { CountryComponentComponent } from './country-component/country-component
 import { StateComponentComponent } from './state-component/state-component.component';
 import { HeaderComponenetsComponent } from './header-componenets/header-componenets.component';
 import { CityComponenetComponent } from './city-componenet/city-componenet.component';
+import { InputComponentComponent } from './input-component/input-component.component';
+import { OutputComponentComponent } from './output-component/output-component.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { CityComponenetComponent } from './city-componenet/city-componenet.compo
     CountryComponentComponent,
     StateComponentComponent,
     HeaderComponenetsComponent,
-    CityComponenetComponent
+    CityComponenetComponent,
+    InputComponentComponent,
+    OutputComponentComponent
   ],
   imports: [
     BrowserModule,
