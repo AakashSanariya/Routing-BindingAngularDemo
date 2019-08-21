@@ -1,0 +1,9 @@
+<div class="parent">
+    <h2>Parent Component</h2>
+    <label>Enter Number:- <input type="text" #PNumber></label>
+    <!-- OutPut Event From Child-->
+    <p>Display Child Component Number:- {{ CData }}</p>
+</div>
+<div>
+    <app-output-component [PData]="PNumber.value" (CDataEvent)="CData = $event"></app-output-component>
+</div>
