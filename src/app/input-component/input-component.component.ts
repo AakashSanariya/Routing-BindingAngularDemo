@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, SimpleChanges} from '@angular/core';
 
 @Component({
   selector: 'app-input-component',
@@ -7,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputComponentComponent implements OnInit {
 
-  public CData: number;
+  /*Child Data*/
+  public CData: string;
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }

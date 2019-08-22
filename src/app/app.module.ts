@@ -9,6 +9,10 @@ import { HeaderComponenetsComponent } from './header-componenets/header-componen
 import { CityComponenetComponent } from './city-componenet/city-componenet.component';
 import { InputComponentComponent } from './input-component/input-component.component';
 import { OutputComponentComponent } from './output-component/output-component.component';
+import { LoginComponent } from './auth/login/login.component';
+import {AuthService} from "./auth/auth.service";
+import {CanActivate} from "@angular/router/router";
+import {AuthGuard} from "./auth/auth.guard";
 
 @NgModule({
   declarations: [
@@ -18,7 +22,8 @@ import { OutputComponentComponent } from './output-component/output-component.co
     HeaderComponenetsComponent,
     CityComponenetComponent,
     InputComponentComponent,
-    OutputComponentComponent
+    OutputComponentComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

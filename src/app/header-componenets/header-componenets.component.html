@@ -4,6 +4,9 @@
     <li><a [routerLink]="['/country', 3]" routerLinkActive="active">Country</a></li>
     <li><a routerLink="/state" routerLinkActive="active">State</a></li>
     <li><a routerLink="/city" routerLinkActive="active">City</a></li>
+    <li><a routerLink="/parent-child" routerLinkActive="active">Input & Output</a></li>
+    <li><a routerLink="/login" routerLinkActive="active" *ngIf="!logoutDisplaybutton()">Login</a></li>
+    <li><a routerLink="/logout" routerLinkActive="active" *ngIf="logoutDisplaybutton()" (click)="logout()">Logout</a></li>
 </ul>
 <div>
 
